@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS NOTE(id INTEGER NOT  NULL PRIMARY KEY AUTOINCREMENT,
+title TEXT NOT NULL,
+description TEXT,
+imageUrl TEXT);
+
+getAllNotes:
+SELECT * FROM NOTE;
+
+getSelectedNote:
+SELECT * FROM NOTE
+WHERE id = ?;
+
+addNote:
+INSERT INTO NOTE
+VALUES ?;
+
+deleteNote:
+DELETE FROM NOTE
+WHERE id = ?;
+
