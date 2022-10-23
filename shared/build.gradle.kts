@@ -21,6 +21,7 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation(Dependencies.SqlDelight.runtime)
+                implementation(Dependencies.Koin.koinCommon)
             }
         }
         val commonTest by getting {
@@ -31,6 +32,7 @@ kotlin {
         val androidMain by getting {
             dependencies {
                 implementation(Dependencies.SqlDelight.androidMain)
+                implementation(Dependencies.Koin.koinAnd)
             }
         }
         val androidTest by getting

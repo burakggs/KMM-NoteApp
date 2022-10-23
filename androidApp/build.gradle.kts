@@ -15,6 +15,7 @@ android {
     }
     buildFeatures {
         compose = true
+        viewBinding = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.3.0"
@@ -39,4 +40,12 @@ dependencies {
     implementation("androidx.compose.foundation:foundation:1.2.1")
     implementation("androidx.compose.material:material:1.2.1")
     implementation("androidx.activity:activity-compose:1.5.1")
+
+    implementation(Dependencies.AndroidApp.appCompat)
+    implementation(Dependencies.AndroidApp.constraintLayout)
+    implementation(Dependencies.AndroidApp.viewModel)
+    implementation(Dependencies.AndroidApp.liveData)
+    implementation(Dependencies.Koin.koinAnd)
+    implementation("com.google.android.material:material:1.5.0")
+
 }
