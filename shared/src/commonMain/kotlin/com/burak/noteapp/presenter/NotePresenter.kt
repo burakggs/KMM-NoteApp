@@ -1,9 +1,6 @@
 package com.burak.noteapp.presenter
 
-import com.burak.noteapp.NoteAppDatabase
 import com.burak.noteapp.repository.DataSource
-import com.burak.noteapp.repository.DataSourceImpl
-import com.squareup.sqldelight.db.SqlDriver
 
 class NotePresenter(val dataSource: DataSource) {
 

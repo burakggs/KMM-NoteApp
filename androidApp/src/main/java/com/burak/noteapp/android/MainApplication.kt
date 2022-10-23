@@ -1,6 +1,7 @@
 package com.burak.noteapp.android
 
 import android.app.Application
+import com.burak.noteapp.android.di.appModule
 import com.burak.noteapp.di.dataModule
 import com.burak.noteapp.di.dbModule
 import org.koin.android.ext.koin.androidContext
@@ -13,7 +14,7 @@ class MainApplication : Application() {
 
         startKoin {
             androidContext(this@MainApplication)
-            modules(dataModule + dbModule)
+            modules(dataModule + dbModule + appModule)
         }
     }
 }

@@ -1,11 +1,11 @@
 package com.burak.noteapp.android.viewmodels
 
 import androidx.lifecycle.ViewModel
-import com.burak.noteapp.sqldelight.NOTE
+import com.burak.noteapp.presenter.NotePresenter
 
-class AddNoteViewModel : ViewModel() {
+class AddNoteViewModel(private val presenter: NotePresenter) : ViewModel() {
 
-    fun addNote(note: NOTE) {
-
+    fun addNote(title: String, description: String, imageUrl: String? = null) {
+        presenter.add(title, description, imageUrl)
     }
 }
