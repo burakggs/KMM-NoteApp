@@ -7,7 +7,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".AddNoteActivity"
+            android:name=".presentation.AddNoteActivity"
             android:exported="true"
             android:theme="@style/Theme.MyApplication.NoActionBar">
             <intent-filter>
@@ -15,5 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".presentation.KtTestActivity" />
+        <activity android:name=".presentation.KtTestActivity2" />
     </application>
 </manifest> 

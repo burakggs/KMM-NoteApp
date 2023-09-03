@@ -1,4 +1,4 @@
-package com.burak.noteapp.android
+package com.burak.noteapp.android.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 
